@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+.background-green{
+    background-color: rgb(107,156,60); 
+}
+
+h1{
+  text-align:center;
+  width: 100%;
+  background-color: rgb(107,156,60);
+  color: white; 
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.card-img-overlay .card-title {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.benefit {
+    margin: 20px 0px; /* Added */
+    padding-right: 30px;
+    float: none; /* Added */
+    align-items: center;  
+}
+
+.background-white {
+  background-color: white; 
+}
+
+.grown {
+  background-color: rgb(248,248,247); 
+}
+
+.page-footer nav a {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  text-align: center;
+  color: black;
+}
+
+.site-footer {
+  padding: 100px 0px;
+}
