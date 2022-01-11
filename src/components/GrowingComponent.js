@@ -1,36 +1,43 @@
 import React from 'react'; 
-import { Card, CardImg, CardText, CardBody, CardTitle, Row, Col, CardSubtitle, Button, Container} from 'reactstrap'; 
+import { Card, CardImg, CardText, CardBody, CardTitle, Button, Row, Col, Container } from 'reactstrap'; 
 import Main from "./MainComponent"; 
 import Benefit from "./BubbleComponent"; 
 
-function RenderShop({p}){
-    //console.log(p);
+function RenderGrowing({g}){
     return(
         <div>
             <Card
-                width="15rem"
+                width="30rem"
                 className="mt-5"
             >
                 <CardImg
-                alt={p.plant}
-                src={p.image}
+                alt={g.kit}
+                src={g.image}
                 top
                 height= "250rem"
                 />
+                <CardTitle>
+                    {g.kit}
+                </CardTitle>
                 <CardBody>
                     <CardTitle>
-                        {p.plant}
+                        {g.text0.plantTitle}
                     </CardTitle>
+                        {g.text0.plantText}
+                    <CardTitle>
+                        {g.text1.plantTitle}
+                    </CardTitle>
+                        {g.text1.plantText}
                 <CardText center>
-                    {p.price}
                 </CardText>
                 </CardBody>
+                <Button color="primary">{g.buttonText}</Button>{' '}
             </Card>
         </div>
     );
 }
 
-function Shop({shop}){
+function Grow({grow}){
 
     /*
     const shop = props.shops.map(partner => {
@@ -40,14 +47,15 @@ function Shop({shop}){
     })
     */
    //console.log(shop);
-   let plantCards = shop.map(p => {
+   let growingCards = grow.map(g => {
        return (
-            <Col sm="3">
-                <RenderShop p={p}/>
+        <Row>
+            <Col>
+                <RenderGrowing g={g}/>
             </Col>
+        </Row>
        )
-   })
-   console.log(plantCards);
+   });
 
 
    {/*  
@@ -61,12 +69,9 @@ function Shop({shop}){
         */}
     return(
         <Container>
-            <Row mt={3}>
-                {plantCards}    
-            </Row>
+                {growingCards}    
         </Container>                        
     );
 }
 
-
-export default Shop; 
+export default Grow; 

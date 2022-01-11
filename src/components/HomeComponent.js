@@ -19,23 +19,23 @@ function Home(props){
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">
-                        <img src="../assets/img/o.jpg" alt="Girl in a jacket" width="500" height="500"></img>    
+                        <img src="../assets/img/o.jpg" width="500" height="500"></img>    
                     </div>
                     <div className="col-md-8">
                         <div className="row">
                             <div class="col-md-6">
-                                <img src="../assets/img/o.jpg" alt="Girl in a jacket" width="250" height="250"></img> 
+                                <img src="../assets/img/o.jpg" width="250" height="250"></img> 
                             </div>
                             <div class="col-md-6">
-                                <img src="../assets/img/o.jpg" alt="Girl in a jacket" width="250" height="250"></img> 
+                                <img src="../assets/img/o.jpg" width="250" height="250"></img> 
                             </div>                           
                         </div>
                         <div className="row">
                             <div class="col-md-6">
-                                <img src="../assets/img/o.jpg" alt="Girl in a jacket" width="250" height="250"></img> 
+                                <img src="../assets/img/o.jpg" width="250" height="250"></img> 
                             </div>
                             <div class="col-md-6">
-                                <img src="../assets/img/o.jpg" alt="Girl in a jacket" width="250" height="250"></img> 
+                                <img src="../assets/img/o.jpg" width="250" height="250"></img> 
                             </div>                           
                         </div>
                     </div>

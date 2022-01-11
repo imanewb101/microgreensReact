@@ -32,11 +32,19 @@ class Header extends Component {
                                     {/*<i className="fa fa-home fa-lg"/>*/} Home
                                 </NavLink>
                             </NavItem>
+
                             <NavItem>
                                 <NavLink className="nav-link" to="/shop">
                                     {/*<i className="fa fa-list fa-lg"/>*/} Shop
                                 </NavLink>
                             </NavItem>
+
+                            <NavItem>
+                                <NavLink className="nav-link" to="/growingkits">
+                                    {/*<i className="fa fa-list fa-lg"/>*/} Kits
+                                </NavLink>
+                            </NavItem>
+                            
                             <NavItem>
                                 <NavLink className="nav-link" to="/aboutus">
                                     {/* <i className="fa fa-info fa-lg"/> */}About 
