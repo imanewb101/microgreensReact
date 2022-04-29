@@ -41,6 +41,11 @@
     background-color: rgb(107,156,60); 
 }
 
+.aboutUs{
+  background-color: white; 
+  color: black;
+}
+
 h1{
   text-align:center;
   width: 100%;

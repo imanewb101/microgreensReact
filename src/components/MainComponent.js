@@ -6,6 +6,7 @@ import Home from './HomeComponent';
 import { BENEFITS } from "../shared/benefits";
 import { SHOP } from "../shared/shop"; 
 import { KITS } from "../shared/kits"; 
+import { GALIMAGES } from '../shared/gallary';
 import Bubble from './BubbleComponent'; 
 import Shop from './ShopComponent'; 
 import About from './AboutComponent'; 
@@ -19,8 +20,8 @@ class Main extends Component {
         this.state={
             benefits: BENEFITS, 
             shops: SHOP, 
-            kits: KITS
-
+            kits: KITS,
+            gal: GALIMAGES
         }
     }
 
@@ -43,6 +44,12 @@ class Main extends Component {
                 <Grow grow={this.state.kits}/>
             );
         }
+
+        const AboutUs = () => {
+            return (
+                <About gal={this.state.gal}/>
+            )
+        }
         
         return (
             <div>
@@ -51,7 +58,7 @@ class Main extends Component {
                     <Route path="/home" component={HomePage}/>
                     <Route path="/shop" component={ShopPage}/>
                     <Route path ="/growingkits" component={GrowPage}/>
-                    <Route path="/aboutus" component={About}/>
+                    <Route path="/aboutus" component={AboutUs}/>
                     <Route path="/contactus" component={Contact}/>
                     <Route path="/cart" component={Cart}/>
                 </Switch>
